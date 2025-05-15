@@ -135,11 +135,11 @@ function isChecked($field) {
             Пол:<br>
           <label class="form-check-label"><input type="radio" checked="checked" class="form-check-input" value="male" id="male" name="gender" required
                                <?php echo isSelected('gender', 'male'); ?>
-                               class="<?php echo isset($errors['gender']) ? 'error-field' : ''; ?>">>
+                               class="<?php echo isset($errors['gender']) ? 'error-field' : ''; ?>">
             Мужской</label>
           <label class="form-check-label"><input type="radio" class="form-check-input" value="female" id="female" name="gender"
                                <?php echo isSelected('gender', 'female'); ?>
-                               class="<?php echo isset($errors['gender']) ? 'error-field' : ''; ?>">>
+                               class="<?php echo isset($errors['gender']) ? 'error-field' : ''; ?>">
             Женский</label><br>
             <?php if (isset($errors['gender'])): ?>
                         <div class="error-message"><?php echo htmlspecialchars($errors['gender']); ?></div>
@@ -174,7 +174,7 @@ function isChecked($field) {
                     <?php endif; ?>
           </label><br>
 
-            :<br>
+            <br>
           <label class="form-check-label"><input type="checkbox" class="form-check-input" name="agreement" id="agreement" value="1" required
                            <?php echo isChecked('agreement'); ?>
                            class="<?php echo isset($errors['agreement']) ? 'error-field' : ''; ?>">
@@ -184,8 +184,8 @@ function isChecked($field) {
                     <?php endif; ?>
           </label><br>
 
-            Сохранить:<br>
-          <button type="submit" name="save" class="btn btn-primary">Опубликовать</button>
+            <br>
+          <button type="submit" name="save" class="btn btn-primary">Сохранить</button>
 
     </form>
   </body>
